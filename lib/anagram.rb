@@ -3,9 +3,10 @@ class Anagram
   def initialize(string)
     @anagram = string 
   end
+  
+  attr_accessor :word, :name 
+  
   def match(string)
-    #puts @anagram
-    print string
     side1 = @anagram.split("")
     string.select{|word| word.split("").sort == side1.sort}
     
