@@ -5,7 +5,8 @@ class Anagram
   end
   def match(string)
     #puts @anagram
-    #print string
+    print string
+    side1 = @anagram.split("")
     
   end
   
