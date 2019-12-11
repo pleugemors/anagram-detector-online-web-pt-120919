@@ -7,6 +7,7 @@ class Anagram
     #puts @anagram
     print string
     side1 = @anagram.split("")
+    string.find{|word| word.split("").sort == side1.sort}
     
   end
   
